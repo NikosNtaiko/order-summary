@@ -1,0 +1,90 @@
+
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    background-size: contain;
+    min-height: 100vh;
+}
+
+main{
+    margin-top: 40px;
+    padding: 75px;
+    display: grid;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    text-align: center;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    max-width: 1440px;
+}
+
+
+.flex-items{
+    display: flex;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    width: 300px;
+    height: 100px;
+}
+
+.flex-items p{
+    position: relative;
+    left: 20px;
+    padding-top: 15px;
+}
+
+.flex-items svg{
+    padding-top: 25px;
+    padding-left: 15px;
+}
+
+.flex-items a{
+   margin-left: 80px;
+   margin-top: 40px;
+}
+
+.cancel-order{
+    margin-top: 30px;
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+button{
+    background-color: hsl(245, 75%, 52%);
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 30px;
+    box-shadow: 0px 25px 10px hsl(225, 100%, 98%);
+}
+
+.hero{
+    position: absolute;
+    top: -150px;
+    width: 450px;
+    border-radius: 20px 20px 0 0;
+}
+
+p{
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+
+.change{
+    color: hsl(245, 75%, 52%);
+    font-weight: bold;
+}
+
+@media (max-width: 375px) {
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+  }
